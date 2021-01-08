@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+		<script type="text/javascript">
+
+		//write a js programme to check a given string contains 2 to 4 occurrence of a specified character
+			const countChars=(str1,char1='')=>{
+
+				//return str1;
+				return str1.split('').filter((ch)=>{
+
+					return ch==char1;
+
+				}).length;
+
+			}//end input
+
+			const myelement=(str1,char1)=>{
+
+			if(countChars(str1,char1) >=2 && countChars(str1,char1)<=4){
+
+				return true;
+			} else{
+				return false;
+			}
+
+			};
+
+			console.log( myelement('ooh','o') );
+			console.log( myelement('oh','o') );
+			console.log( myelement('ooooh','o') );
+			console.log( myelement('ooooooooooh','o') );
+			//console.log(countChars("hello"));
+		</script>
+</body>
+</html>

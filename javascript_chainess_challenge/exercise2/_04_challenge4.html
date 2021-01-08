@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+		<script type="text/javascript">
+			
+		//write a programme to check whether a give array of integer is sorted in ascending order
+		
+		function func(arr){
+
+
+			for(let i=0; i<arr.length; i++){
+
+				for(let j=i+1; j<=arr.length; j++){
+
+					if(arr[i] > arr[j]){
+
+						let temp=arr[i];
+						arr[i]=arr[j];
+						arr[j]=temp;
+
+
+					}
+
+				}//inner loop
+			}//outerloop
+
+			return arr;
+
+		}//func	
+
+
+		console.log(func([1,12,8,4,2,7]))
+
+		</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+		<script type="text/javascript">
+			
+			////write a program a to find the number of even values up to given number
+
+			let evenNumberArr=(num)=>{
+
+				let arr=[];
+				for(let i=0; i<num; i++){
+
+					if(i %2==0){
+						arr.push(i);
+					}
+				}
+				return arr.length;
+
+			};
+			console.log(evenNumberArr(10));
+		</script>
+</body>
+</html>

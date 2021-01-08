@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+		<script type="text/javascript">
+			
+			function pairwise(arr,arg){
+
+			var x= 	arr.reduce(function(acc,n,index,array){
+
+					for(var x=index+1; x<array.length; x++){
+
+						//console.log(x);
+						if(array[index]+array[x]==arg){
+
+							acc += index+x;
+
+							array[index]=array[x]=NaN;
+							break;
+						}
+					}
+					return acc;
+
+				}, 0);
+
+				
+			return x;
+
+			}
+
+			console.log(pairwise( [1,4,2,3,0,5],7) );
+		</script>
+</body>
+</html>

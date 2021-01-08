@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+		<script type="text/javascript">
+
+			//write a js programme to check a given string contains 2 to 4 occurrence of a specified character
+
+			function findlen(str,_char){
+
+				return str.split('').filter((ch)=> ch===_char).length;
+			}
+
+			function checkString(str,_char){
+
+				if(findlen(str,_char) >=2 && findlen(str,_char) <=4){
+					return true;
+				}
+				return false;
+
+			}
+			console.log( checkString('ooh','o') );
+			console.log( checkString('oh','o') );
+			console.log( checkString('ooooh','o') );
+			console.log( checkString('ooooooooooh','o') );
+			
+		</script>
+</body>
+</html>

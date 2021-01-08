@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		//write a programme to check whether a give array of integer is sorted in ascending order
+
+		let isAscending=(arr)=>{
+
+			return arr.every((v,i,arr)=>{
+				
+
+				if (arr[i+1] < v){
+				
+					return false;
+				}
+				return true;
+
+			});
+
+			/*for(let i=0 ; i<arr.length; i++){
+
+				if(arr[i+1] < arr[i]) return false;
+
+			}
+			return true;*/
+
+		};
+
+		console.log(isAscending([1,2,3,4,5]));
+		console.log(isAscending([1,12,8,4,2,7])); 
+	</script>
+</body>
+</html>

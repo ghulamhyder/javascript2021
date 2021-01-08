@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+		<script type="text/javascript">
+			//write a programame to convert a comma-separted values (csv) string
+			//to a 20 array.a new line indicates a new row in the array.
+			//example
+			//[
+			//[abc,def,ghi],
+			//[jkl,mno,pqr],
+			//[stu,vwx,yza]
+			//]
+
+			function parseCSV(csvString){
+
+				let arr= csvString.split('\n');
+				
+
+				return arr.map(function(row){
+
+					return row.split(',');
+				});
+
+
+			}
+
+			let str=`abc,def,ghi
+jkl,mno,pqr
+stu,vwx,yza`;
+
+			console.log(parseCSV(str))
+		</script>
+</body>
+</html>

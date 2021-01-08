@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+		<script type="text/javascript">
+		////write a programe to get the largest even number from an array of intgers	
+
+			let largeEvenNum=(arr)=>{
+
+				let bignum=0;
+				let arrFilter=arr.filter((num)=> num%2==0);
+				
+				for(let i=0; i<arrFilter.length; i++){
+
+					if(bignum < arrFilter[i]){
+
+						bignum=arrFilter[i];
+					}
+				}
+
+				return bignum;
+
+
+			};
+
+			console.log(largeEvenNum([1,3,12,2,5,7,8]));
+		
+
+		</script>
+</body>
+</html>

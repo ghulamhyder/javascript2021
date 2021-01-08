@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+		<script type="text/javascript">
+
+	/*write a programme to create a new string from a given string taking 
+		the first 3 character and least 3 character of a string and adding 
+		them tgether . the string length must be 3 mre if not the riginal string is returend*/
+
+			const makeNewString=(str)=>{
+
+				return str.length < 3 ? str : str.slice(0,3) + str.slice(-3);
+			};
+
+			
+			
+			
+
+			console.log(makeNewString('abc'));
+			console.log(makeNewString('abcdef'));
+			console.log(makeNewString('abcdef123'));
+
+			
+		</script>
+</body>
+</html>

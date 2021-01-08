@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+		<script type="text/javascript">
+		
+		/*write a programme to compare bjects to determine if the first one contains the
+		same properties as the second one (which may also have additional properties)*/	
+
+		const objA={a:1,b:2,c:1};
+		const objB={a:1,b:1,c:1};
+		const objC={a:1,b:1,d:1};
+
+		function objectEqual(a,b=null){
+
+			//console.log(Object.keys(a));
+			//console.log(Object.keys(b));
+
+			return Object.keys(a).every((key)=>{
+
+			return 	b[key];//jha bhi us ko false value mili ye false ker dey ga
+
+			});
+
+			console.log(Window.Object);
+		/*return  a.every(function(v){ sub value 9 se bari ho ager nhi ye false hojay ga
+			return v>=9;
+		});*/
+
+		/*return  a.some(function(v){ yha ager ek value bbhi true mil to true ker dey ga
+			return v >=18;
+		});*/
+			
+		}
+
+		console.log(objectEqual(objA,objC));
+
+
+		
+
+		</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+		<script type="text/javascript">
+			const nearst100=(num1,num2)=>{
+				//100-23=77
+
+				//100-45=55
+
+				return (100-num1) < (100-num2) ? num1 : num2;
+
+
+
+				/*let x=Math.abs(100-num1);
+				let y=Math.abs(100-num2);
+
+				
+				 if(x < y ){
+					return num1;
+				}
+				else if(y < x){
+					return num2;
+				}
+				else if(x==y){
+					return num2 || num1;
+				}*/
+				
+
+			};
+
+			console.log(nearst100(23,45));
+			//console.log(nearst100(45,45));
+		</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+		<script type="text/javascript">
+			
+			//write a programme to replace the first digit in a string 
+			//(should contains at l;east digit )with $ character
+
+			const replaceFirstDigit=(str)=>{
+
+				//return str.replace(/[0-9]/,'$');
+				//OR
+				return str.replace(/\d/,'$');
+				//return str.replace(/[0-9]/g,'$'); global
+
+
+
+			};
+
+			console.log(replaceFirstDigit("heelo2398883world"));
+			console.log(replaceFirstDigit("4heeloworld"));
+		</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+		<script type="text/javascript">
+			function nearst100(a,b){
+
+				let x=100-a;
+				let y=100-b;
+				if(x< y){
+					return a;
+				}
+				else if (y<x){
+					return b;
+				}
+				else if(x===y){
+					return a || b;
+				}
+
+			}
+			console.log(nearst100(50,45));
+		</script>
+</body>
+</html>
